@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peter Mugo | Frontend Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Peter Mugo, frontend developer and UI/UX designer.">
+  <!-- Fonts: Syne (headings) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- Icons: Font Awesome (free CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== HEADER / NAV ========== -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#home" class="logo">Portfolio<span>.</span></a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+<!-- ========== HERO ========== -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="greeting">Hello, I'm</p>
+      <h1>Peter Mugo</h1>
+      <h2 class="typing">I'm a <span id="typed"></span><span class="cursor">|</span></h2>
+      <p class="lead">I design and build fast, accessible websites and apps. Seven years of turning rough ideas into interfaces people enjoy using.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="photo.jpg" alt="Peter Mugo">
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT / RESUME ========== -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-title">my resume</h2>
+    <div class="resume-grid">
+
+      <div>
+        <h3 class="col-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+        <div class="timeline">
+          <article class="t-item">
+            <span class="t-date">2026 - present</span>
+            <h4>B.Sc. Computer Science</h4>
+            <p class="t-org">Mount Kenya University</p>
+            <p>Focusing on web technologies, algorithms and software design, software development, App development and backend engineering.</p>
+          </article>
+          <article class="t-item">
+            <span class="t-date">2019 - 2024</span>
+            <h4>Diploma in Computer Science</h4>
+            <p class="t-org">Mount Kenya University</p>
+            <p>Focused on web technologies, algorithms, software design and network management.</p>
+          </article>
+          <article class="t-item">
+            <span class="t-date">2019 - present</span>
+            <h4>Online Bootcamps</h4>
+            <p class="t-org">certification</p>
+            <p> intensive training programs that taught me practical, job-ready skills over a fast-paced schedule.</p>
+          </article>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="col-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+        <div class="timeline">
+          <article class="t-item">
+            <span class="t-date">2024 - Present</span>
+            <h4>Full Stack Developer</h4>
+            <p class="t-org">Freelancer</p>
+            <p>providing services to multiple clients on a per-project or contract basis whenever needed.</p>
+          </article>
+          <article class="t-item">
+            <span class="t-date">2023 - 2024</span>
+            <h4>attachment</h4>
+            <p class="t-org">Kiambu County Government</p>
+            <p>Help county staff troubleshoot and fix computer hardware, printers, and software issues.  Assist in installing, upgrading, and maintaining network cables, computers, and peripheral devices.</p>
+          </article>
+          <article class="t-item">
+            <span class="t-date">2019 - 2023</span>
+            <h4>student</h4>
+            <p class="t-org">personal projects</p>
+            <p> Creative undertakings that aided my own growth and learning</p>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section class="section alt" id="services">
+  <div class="container">
+    <h2 class="section-title">Services</h2>
+    <div class="services-grid">
+      <article class="card service">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Fast, responsive, SEO-friendly websites built with modern HTML, CSS and JavaScript.</p>
+      </article>
+      <article class="card service">
+        <i class="fa-solid fa-pen-ruler"></i>
+        <h3>UI/UX Design</h3>
+        <p>Research-led wireframes, prototypes and design systems that make products easy to use.</p>
+      </article>
+      <article class="card service">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h3>App Development</h3>
+        <p>Cross-platform mobile apps with clean architecture and smooth interactions.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PORTFOLIO ========== -->
+<section class="section" id="portfolio">
+  <div class="container">
+    <h2 class="section-title">Portfolio</h2>
+
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="web">Web</button>
+      <button class="filter" data-filter="design">Design</button>
+      <button class="filter" data-filter="app">App</button>
+    </div>
+
+    <div class="projects-grid" id="projects">
+      <!-- Thumbnails are CSS gradients; swap the .thumb div for an <img> when you have screenshots -->
+      <article class="card project" data-category="web">
+        <div class="thumb g1"><span>BEADS MAMA AFRICA</span></div>
+        <div class="project-info"><h3>Shopline African Craft Storefront</h3><a href="#" target="_blank" rel="noopener">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="card project" data-category="design">
+        <div class="thumb g2"><span>Finley</span></div>
+        <div class="project-info"><h3>Finley Banking UI Kit</h3><a href="#" target="_blank" rel="noopener">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="card project" data-category="app">
+        <div class="thumb g3"><span>Task Aid</span></div>
+        <div class="project-info"><h3>Task Manager App</h3><a href="#" target="_blank" rel="noopener">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="card project" data-category="web">
+        <div class="thumb g4"><span>Kuku Smart</span></div>
+        <div class="project-info"><h3>Smart Farming App</h3><a href="#" target="_blank" rel="noopener">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="card project" data-category="design">
+        <div class="thumb g5"><span>Vaalika</span></div>
+        <div class="project-info"><h3>Vaalika Brand Identity</h3><a href="#" target="_blank" rel="noopener">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+      <article class="card project" data-category="app">
+        <div class="thumb g6"><span>Fitpulse</span></div>
+        <div class="project-info"><h3>Fitpulse Tracker</h3><a href="#" target="_blank" rel="noopener">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="8ca93390-5711-46d7-bef8-a1ea9ff53339">
+      <div class="row">
+        <div class="field"><label for="name">Name</label><input type="text" name="name" required autocomplete="name"><small class="error"></small></div>
+        <div class="field"><label for="email">Email</label><input type="email" name="email" required autocomplete="email"><small class="error"></small></div>
+      </div>
+      <div class="field"><label for="subject">Subject</label><input type="text" id="subject" name="subject" required><small class="error"></small></div>
+      <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea><small class="error"></small></div>
+      <button type="reset" class="btn btn-success"> Clear </button><br> <br>
+      <button type="submit" class="btn btn-primary">Send message</button><br><br>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Peter Mugo. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://github.com/pitah01" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
